@@ -1,5 +1,4 @@
-#ifndef _LGREMOTE_H
-#define _LGREMOTE_H
+#pragma once
 
 const size_t MAX_BODY_LENGTH = 1024;
 const size_t MAX_HTTP_REQUEST_LENGTH = 1024;
@@ -7,7 +6,7 @@ const size_t MAX_HTTP_REQUEST_LENGTH = 1024;
 const char *authURL = "/roap/api/auth";
 const char *cmdURL = "/roap/api/command";
 const char *httpTemplate = "POST %s HTTP/1.1\r\n"
-	                   "Host: %s:%i\r\n"
+	                   "Host: %s\r\n"
         	           "Connection: Keep-Alive\r\n"
                            "content-length: %i\r\n"
                   	   "content-type: application/atom+xml\r\n"
@@ -21,7 +20,7 @@ const char *reqKey = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
 const char *authKey = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
                       "<auth>\n"
                       " <type>AuthReq</type>\n"
-                      " <value>%i</value>\n"
+                      " <value>%s</value>\n"
                       "</auth>";
 
 const char *handleKeyInput = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
@@ -45,5 +44,3 @@ const char *handleTouchMove = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
 
 int strncpy_s(char *dst, const char *src, const size_t n);
 
-
-#endif

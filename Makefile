@@ -40,9 +40,9 @@ GRAPHICS	:=	gfx
 GFXBUILD	:=	$(BUILD)
 #ROMFS		:=	romfs
 #GFXBUILD	:=	$(ROMFS)/gfx
-APP_TITLE	:=3DSLGRemote
-APP_DESCRIPTION	:=A remote control for LG TVs from circa 2012
-APP_AUTHOR	:=Ali Raheem
+APP_TITLE	:=	3DSLGRemote
+APP_DESCRIPTION	:=	A remote control for LG TVs from circa 2012
+APP_AUTHOR	:=	Ali Raheem
 #---------------------------------------------------------------------------------
 # options for code generation
 #---------------------------------------------------------------------------------
