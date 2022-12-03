@@ -34,3 +34,7 @@ R-shoulder + D-Down - Volume Down
 
 ## Installing
 Use Homebrew Launcher.
+
+## Assets
+
+From Kenney via OpenGameArt.ort - https://opengameart.org/users/kenney
